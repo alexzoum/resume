@@ -1,11 +1,13 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="sticky top-0 z-10 border-b border-border bg-surface/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
-          <span className="text-lg font-bold text-foreground">AZ</span>
-          <div className="flex gap-6 text-sm font-medium text-muted">
+      <nav className="sticky top-0 z-10 w-full border-b border-border bg-surface/80 backdrop-blur-md">
+        <div className="mx-auto flex max-w-4xl items-center gap-4 px-6 py-4">
+          <span className="shrink-0 text-lg font-bold text-foreground">AZ</span>
+          <div className="scrollbar-hide flex gap-3 overflow-x-auto text-sm font-medium text-muted">
             <a href="#about" className="transition-colors hover:text-foreground">
               About
             </a>
@@ -28,14 +30,24 @@ export default function Home() {
       {/* Hero */}
       <header id="about" className="mx-auto max-w-4xl px-6 pt-10 pb-0">
         <div className="flex flex-col gap-6">
-          <div>
-            <h1 className="text-5xl font-bold tracking-tight text-foreground">
-              Alex Zoumaya
-            </h1>
-            <p className="mt-2 text-xl text-accent font-medium">
-              Software Engineer II
-            </p>
-            <p className="mt-1 text-muted">Chicago, IL</p>
+          <div className="flex items-center gap-6">
+            <Image
+              src="/headshot.JPG"
+              alt="Alex Zoumaya"
+              width={224}
+              height={224}
+              quality={90}
+              className="h-28 w-28 shrink-0 rounded-full border-2 border-border object-cover object-[30%_20%]"
+            />
+            <div>
+              <h1 className="text-5xl font-bold tracking-tight text-foreground">
+                Alex Zoumaya
+              </h1>
+              <p className="mt-2 text-xl text-accent font-medium">
+                Software Engineer II
+              </p>
+              <p className="mt-1 text-muted">Chicago, IL</p>
+            </div>
           </div>
           <p className="max-w-2xl text-lg leading-relaxed text-muted">
             Front-end Software Engineer with 5 years experience building
@@ -70,9 +82,9 @@ export default function Home() {
       </header>
 
       {/* Experience */}
-      <section id="experience" className="mx-auto max-w-4xl px-6 py-8">
+      <section id="experience" className="mx-auto max-w-4xl px-6 py-4">
         <h2 className="text-2xl font-bold text-foreground">Work Experience</h2>
-        <div className="mt-8 space-y-10">
+        <div className="mt-4 space-y-10">
           {/* FOX Sports */}
           <div className="rounded-xl border border-border bg-surface p-8">
             <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-start">
@@ -83,7 +95,7 @@ export default function Home() {
                 <p className="text-accent font-medium">Software Engineer II</p>
                 <p className="text-sm text-muted">Remote</p>
               </div>
-              <span className="shrink-0 rounded-full bg-accent-light px-3 py-1 text-sm font-medium text-accent">
+              <span className="self-start rounded-full bg-accent-light px-3 py-1 text-xs sm:text-sm font-medium text-accent whitespace-nowrap">
                 Jan 2021 &ndash; Mar 2026
               </span>
             </div>
@@ -144,7 +156,7 @@ export default function Home() {
                 </p>
                 <p className="text-sm text-muted">Dayton, OH</p>
               </div>
-              <span className="shrink-0 rounded-full bg-accent-light px-3 py-1 text-sm font-medium text-accent">
+              <span className="self-start rounded-full bg-accent-light px-3 py-1 text-xs sm:text-sm font-medium text-accent whitespace-nowrap">
                 Jan 2019 &ndash; May 2020
               </span>
             </div>
@@ -168,9 +180,9 @@ export default function Home() {
       </section>
 
       {/* Awards */}
-      <section className="mx-auto max-w-4xl px-6 py-8">
+      <section className="mx-auto max-w-4xl px-6 py-4">
         <h2 className="text-2xl font-bold text-foreground">Awards</h2>
-        <div className="mt-8 rounded-xl border border-border bg-surface p-8">
+        <div className="mt-4 rounded-xl border border-border bg-surface p-8">
           <div className="flex items-start gap-4">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600">
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -190,15 +202,15 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="mx-auto max-w-4xl px-6 py-8">
+      <section id="skills" className="mx-auto max-w-4xl px-6 py-4">
         <h2 className="text-2xl font-bold text-foreground">Skills</h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2">
+        <div className="mt-4 grid gap-6 sm:grid-cols-2">
           <div className="rounded-xl border border-border bg-surface p-6">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-accent">
               Frontend
             </h3>
             <div className="mt-4 flex flex-wrap gap-2">
-              {["Vue.js", "React", "JavaScript", "HTML/CSS"].map((skill) => (
+              {["React", "Vue.js", "Nuxt.js", "Next.js", "TypeScript", "JavaScript", "HTML/CSS"].map((skill) => (
                 <span
                   key={skill}
                   className="rounded-full bg-accent-light px-3 py-1 text-sm font-medium text-accent"
@@ -268,9 +280,9 @@ export default function Home() {
       </section>
 
       {/* Education */}
-      <section id="education" className="mx-auto max-w-4xl px-6 py-8">
+      <section id="education" className="mx-auto max-w-4xl px-6 py-4">
         <h2 className="text-2xl font-bold text-foreground">Education</h2>
-        <div className="mt-8 rounded-xl border border-border bg-surface p-8">
+        <div className="mt-4 rounded-xl border border-border bg-surface p-8">
           <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-start">
             <div>
               <h3 className="text-xl font-semibold text-foreground">
@@ -279,7 +291,7 @@ export default function Home() {
               <p className="text-accent font-medium">Computer Science Major</p>
               <p className="text-sm text-muted">Dayton, Ohio</p>
             </div>
-            <span className="shrink-0 rounded-full bg-accent-light px-3 py-1 text-sm font-medium text-accent">
+            <span className="self-start rounded-full bg-accent-light px-3 py-1 text-xs sm:text-sm font-medium text-accent whitespace-nowrap">
               Class of 2020
             </span>
           </div>
@@ -287,9 +299,9 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="mx-auto max-w-4xl px-6 py-8">
+      <section id="contact" className="mx-auto max-w-4xl px-6 py-4">
         <h2 className="text-2xl font-bold text-foreground">Get in Touch</h2>
-        <div className="mt-8 rounded-xl border border-border bg-surface p-8">
+        <div className="mt-4 rounded-xl border border-border bg-surface p-8">
           <p className="text-muted">
             Interested in working together? Feel free to reach out.
           </p>
@@ -319,7 +331,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8 text-center text-sm text-muted">
+      <footer className="border-t border-border py-4 text-center text-sm text-muted">
         <p>&copy; {new Date().getFullYear()} Alex Zoumaya. All rights reserved.</p>
       </footer>
     </div>
