@@ -50,11 +50,13 @@ export default function Home() {
             </div>
           </div>
           <p className="max-w-2xl text-lg leading-relaxed text-muted">
-            Front-end Software Engineer with 5 years experience building
-            high-performance Vue.js applications at FOX Sports. Experienced in
-            live event platforms, interactive gaming, cross-platform
-            collaboration, third-party integration, and SEO-driven content
-            delivery for millions of users.
+            Software engineer with 5+ years of experience building and operating
+            high-scale, real-time applications serving 10M+ monthly average
+            users. Experienced in performance optimization, reliability under
+            extreme traffic conditions, and designing systems that support live,
+            event-driven environments. Strong interest in AI-assisted development
+            and building intelligent, user-facing systems powered by modern
+            tooling.
           </p>
           <div className="flex gap-4">
             <a
@@ -102,46 +104,95 @@ export default function Home() {
             <ul className="mt-6 space-y-3 text-muted">
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Lead development of interactive, high-traffic Vue.js interfaces
-                supporting online games and live streaming events viewed by an
-                average of 4.7M users per month.
+                Led development of high-performance, real-time web applications
+                in Vue.js supporting live sports and gaming experiences for 10M+
+                monthly users
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Drove SEO improvements delivering millions of organic visits with
-                peaks as high as 5.3M users for a single piece of content.
+                Partnered cross-functionally with product, design, and analytics
+                teams to deliver both new features and consistent, high-quality
+                user experiences across platforms
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Integrated third-party partners (DraftKings, Cipher, and
-                FairPlay) into the FOX Sports ecosystem.
+                Drove SEO and content performance improvements resulting in
+                millions of incremental organic users, with peak traffic reaching
+                5.3M users on a single feature
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Provided real-time engineering support during major events (World
-                Cup, Super Bowl), ensuring zero downtime and optimal performance.
+                Integrated third-party platforms (DraftKings, FairPlay, Cipher)
+                into core product ecosystem, enabling new interactive and
+                revenue-generating experiences
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Collaborated across engineering, product, and design teams to
-                maintain consistent UI/UX across platforms.
+                Owned production reliability during high-stakes live events,
+                maintaining zero downtime under extreme traffic spikes
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Worked with ad agencies achieving monthly ad revenue of{" "}
-                $100K per month.
+                Improved team velocity and code quality through code reviews,
+                shared standards, and mentorship
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Deployed code using GitHub and managed multiple environments
-                through CI/CD workflows.
+                Contributed to CI/CD pipelines and deployment workflows using
+                GitHub, supporting multiple environments and rapid release cycles
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Conducted code reviews and enforced best practices to improve
-                maintainability and team performance.
+                Supported monetization initiatives contributing to $100K+ in
+                monthly ad revenue
               </li>
             </ul>
+            <div className="mt-6">
+              <h4 className="text-sm font-semibold uppercase tracking-wider text-accent">
+                Projects
+              </h4>
+              <div className="mt-3 space-y-4">
+                <div className="rounded-lg border border-border p-4">
+                  <a
+                    href="https://www.foxsports.com/nfl/2026-super-bowl-lx-seattle-seahawks-vs-new-england-patriots-feb-08-2026-game-boxscore-11036"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-medium text-foreground transition-colors hover:text-accent"
+                  >
+                    Event Page Redesign
+                    <svg className="h-3.5 w-3.5 text-muted" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </a>
+                  <p className="mt-2 text-sm text-muted">
+                    Served as tech lead on a full redesign of the most visited
+                    page on FOX Sports. Rebuilt headers, components, and backend
+                    infrastructure from the ground up. This was one of my
+                    cornerstone projects during my time at FOX.
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border p-4">
+                  <a
+                    href="https://www.foxsports.com/fox-super-6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-medium text-foreground transition-colors hover:text-accent"
+                  >
+                    FOX Super 6
+                    <svg className="h-3.5 w-3.5 text-muted" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </a>
+                  <p className="mt-2 text-sm text-muted">
+                    Free-to-play prediction game where users pick outcomes for a
+                    chance to win prizes. Architected the main question flow that
+                    users scroll through to make their picks. Built and
+                    maintained the interactive frontend powering live gameplay
+                    experiences for millions of users.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* University of Dayton */}
@@ -163,16 +214,18 @@ export default function Home() {
             <ul className="mt-6 space-y-3 text-muted">
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Administered lab sessions with students
+                Supported instruction for computer science coursework, assisting
+                students with programming concepts and debugging
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Routinely graded labs and assignments submitted by students
+                Led lab sessions and provided guidance on assignments, improving
+                student comprehension and performance
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Answered questions about general programming concepts and
-                homework assignments
+                Evaluated and graded coursework with a focus on clarity,
+                accuracy, and constructive feedback
               </li>
             </ul>
           </div>
@@ -191,7 +244,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-foreground">
-                Emmy Nomination: Outstanding Interactive Experience, Event Coverage
+                Emmy Award Nominee &ndash; Outstanding Interactive Experience, Event Coverage
               </h3>
               <p className="mt-1 text-muted">
                 2022 FIFA World Cup &ndash; FOX | FS1 | FOX Digital
@@ -210,7 +263,7 @@ export default function Home() {
               Frontend
             </h3>
             <div className="mt-4 flex flex-wrap gap-2">
-              {["React", "Vue.js", "Nuxt.js", "Next.js", "TypeScript", "JavaScript", "HTML/CSS"].map((skill) => (
+              {["Vue.js", "React", "TypeScript", "HTML5", "CSS3"].map((skill) => (
                 <span
                   key={skill}
                   className="rounded-full bg-accent-light px-3 py-1 text-sm font-medium text-accent"
@@ -225,7 +278,7 @@ export default function Home() {
               Backend
             </h3>
             <div className="mt-4 flex flex-wrap gap-2">
-              {["GoLang", "Python", "Java"].map((skill) => (
+              {["Go", "Python", "Java"].map((skill) => (
                 <span
                   key={skill}
                   className="rounded-full bg-accent-light px-3 py-1 text-sm font-medium text-accent"
@@ -237,13 +290,13 @@ export default function Home() {
           </div>
           <div className="rounded-xl border border-border bg-surface p-6">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-accent">
-              Tools
+              Tools & Platforms
             </h3>
             <div className="mt-4 flex flex-wrap gap-2">
               {[
-                "Claude",
-                "Cursor",
                 "Git",
+                "GitHub",
+                "CI/CD",
                 "Amplitude",
                 "DataDog",
                 "Chartbeat",
@@ -261,19 +314,32 @@ export default function Home() {
           </div>
           <div className="rounded-xl border border-border bg-surface p-6">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-accent">
+              AI & Developer Tools
+            </h3>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {["Claude", "Cursor"].map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full bg-accent-light px-3 py-1 text-sm font-medium text-accent"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="rounded-xl border border-border bg-surface p-6">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-accent">
               Methodologies
             </h3>
             <div className="mt-4 flex flex-wrap gap-2">
-              {["SAFe Agile", "CI/CD", "Code Reviews", "Sprint Planning"].map(
-                (skill) => (
-                  <span
-                    key={skill}
-                    className="rounded-full bg-accent-light px-3 py-1 text-sm font-medium text-accent"
-                  >
-                    {skill}
-                  </span>
-                )
-              )}
+              {["Agile (SAFe)"].map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full bg-accent-light px-3 py-1 text-sm font-medium text-accent"
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
           </div>
         </div>
@@ -288,11 +354,11 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-foreground">
                 University of Dayton
               </h3>
-              <p className="text-accent font-medium">Computer Science Major</p>
-              <p className="text-sm text-muted">Dayton, Ohio</p>
+              <p className="text-accent font-medium">Bachelor of Science in Computer Science</p>
+              <p className="text-sm text-muted">Dayton, OH</p>
             </div>
             <span className="self-start rounded-full bg-accent-light px-3 py-1 text-xs sm:text-sm font-medium text-accent whitespace-nowrap">
-              Class of 2020
+              May 2020
             </span>
           </div>
         </div>
